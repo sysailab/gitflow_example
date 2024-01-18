@@ -7,8 +7,5 @@ id = int(input())
 
 std_manager= StudentManager(filepath)
 
-std_manager.calculate_averages()
-std_manager.grade_rank()
-
 std = std_manager.create_student(id)
 std.print_data()

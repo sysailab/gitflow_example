@@ -88,7 +88,7 @@ std_manager.grade_rank()
 ```
 git add .
 git commit -m "rank update"
-git push orgin rank
+git push
 ```
 7. develop으로 이동 후, aver branch를 merge후 삭제   
 8. rank branch로 이동
@@ -96,7 +96,7 @@ git push orgin rank
 ```
 git pull origin develop
 ``` 
-10. 충돌된 develop을 아래와 같이 수정     
+10. 충돌된 내용을 아래와 같이 수정     
 - std_grade.py : 두 함수 전부 실행
 ```
 std_manager= StudentManager(filepath)
@@ -107,14 +107,14 @@ std_manager.grade_rank()
 std = std_manager.create_student(id)
 std.print_data()
 ```
-10. develop branch를 push    
+11. rank branch를 push    
 ```
 git add .
-git commit -m "develop update"
-git push origin develop
+git commit -m "rank update"
+git push 
 ```
-11. rank branch를 develop에 merge   
-12. develop branch에서 release branch를 생성    
-13. release branch로 이동 후 프로그램 실행   
-14. 문제가 없을 경우 develop branch에 merge      
-15. release branch를 main branch로 merge함
+12. rank branch를 develop에 merge   
+13. develop branch에서 release branch를 생성    
+14. release branch로 이동 후 프로그램 실행   
+15. 문제가 없을 경우 develop branch에 merge      
+16. release branch를 main branch로 merge
